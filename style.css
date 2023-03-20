@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://w0.peakpx.com/wallpaper/228/775/HD-wallpaper-starry-sky-glow-art-dark-lake-reflection.jpg);
+  /* The image used for background*/
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-position: center;
+  /* Center the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Tilt Neon', cursive;
+}
+
+/* Scroll Bar CSS */
+
+
+body {
+  --sb-track-color: #333333;
+  --sb-thumb-color: #3f3f3f;
+  --sb-size: 10px;
+
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+
+}
+
+.parent-container {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 50px 16px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.avatar-container {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.avatar-container p {
+  color: white;
+  text-align: center;
+  padding: 0 18px;
+  margin: 26px 0;
+  width: auto;
+}
+
+.avatar {
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-container a {
+  height: 50px;
+  width: 42%;
+  text-decoration: none;
+  color: white;
+  padding: 0 100px;
+  margin: 5px 10px;
+  background-color: #000000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 2px solid #000000;
+  transition: all .3s linear 0s;
+}
+
+.links-container a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  color: #000000;
+  scale: 1.1;
+}
